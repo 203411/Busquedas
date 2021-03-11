@@ -44,6 +44,7 @@ public class cMain {
                     Libro libro2 = registrarLibro();
                     posicion = busqueda.binaria(listaLibros, libro2, false);
                     if(posicion >= 0){
+                        Collections.sort(listaLibros);
                         //System.out.println("Posicion: " + posicion);
                         posicion = busqueda.binaria(listaLibros, libro2, false);
                         listaLibros.remove(posicion);
